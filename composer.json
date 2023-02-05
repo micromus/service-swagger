@@ -1,5 +1,5 @@
 {
-    "name": "micromus/laravel-service-swagger",
+    "name": "micromus/service-swagger",
     "description": "Added annotations for micromus microservices",
     "keywords": ["kEERill", "laravel", "service-swagger", "micromus"],
     "homepage": "https://github.com/micromus/service-swagger",
