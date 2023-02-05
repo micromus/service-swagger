@@ -1,10 +1,9 @@
 <?php
 
-namespace KEERill\ServiceSwagger\Resources;
+namespace Micromus\ServiceSwagger\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Pagination\LengthAwarePaginator;
-use OpenApi\Attributes\Property;
 
 final class PaginationResource extends JsonResource
 {

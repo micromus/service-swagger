@@ -1,8 +1,8 @@
 {
-    "name": "keerill/laravel-service-swagger",
-    "description": "This is my package laravel-service-swagger",
-    "keywords": ["kEERill", "laravel", "laravel-service-swagger"],
-    "homepage": "https://github.com/keerill/laravel-service-swagger",
+    "name": "micromus/laravel-service-swagger",
+    "description": "Added annotations for micromus microservices",
+    "keywords": ["kEERill", "laravel", "service-swagger", "micromus"],
+    "homepage": "https://github.com/micromus/service-swagger",
     "license": "MIT",
     "authors": [
         {
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "KEERill\\ServiceSwagger\\": "src"
+            "Micromus\\ServiceSwagger\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KEERill\\ServiceSwagger\\Tests\\": "tests"
+            "Micromus\\ServiceSwagger\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,11 +51,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "KEERill\\ServiceSwagger\\ServiceSwaggerServiceProvider"
-            ],
-            "aliases": {
-                "ServiceSwagger": "KEERill\\ServiceSwagger\\Facades\\ServiceSwagger"
-            }
+                "Micromus\\ServiceSwagger\\ServiceSwaggerServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

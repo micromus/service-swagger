@@ -1,6 +1,6 @@
 <?php
 
-namespace KEERill\ServiceSwagger\Attributes\Bodies;
+namespace Micromus\ServiceSwagger\Attributes\Bodies;
 
 use OpenApi\Attributes\JsonContent;
 use OpenApi\Attributes\MediaType;

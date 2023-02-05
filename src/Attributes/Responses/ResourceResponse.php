@@ -1,6 +1,6 @@
 <?php
 
-namespace KEERill\ServiceSwagger\Attributes\Responses;
+namespace Micromus\ServiceSwagger\Attributes\Responses;
 
 use OpenApi\Attributes\JsonContent;
 use OpenApi\Attributes\Property;
