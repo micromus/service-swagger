@@ -26,8 +26,8 @@ final class PaginationResource extends JsonResource
             'total' => $this->resource->total(),
             'data' => [
                 'from' => $this->resource->firstItem(),
-                'to' => $this->resource->lastItem()
-            ]
+                'to' => $this->resource->lastItem(),
+            ],
         ];
     }
 }

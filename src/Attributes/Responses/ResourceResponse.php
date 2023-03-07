@@ -10,8 +10,6 @@ use OpenApi\Attributes\Response;
 final class ResourceResponse extends Response
 {
     /**
-     * @param string $resourceClass
-     * @param string $description
      * @return void
      */
     public function __construct(string $resourceClass, string $description = 'Запрос успешно выполнен')
@@ -20,7 +18,7 @@ final class ResourceResponse extends Response
             response: 200,
             description: $description,
             content: new JsonContent(properties: [
-                new Property(property: $resourceClass::$wrap, ref: '#/components/schemas/' . class_basename($resourceClass))
+                new Property(property: $resourceClass::$wrap, ref: '#/components/schemas/'.class_basename($resourceClass)),
             ])
         );
     }
