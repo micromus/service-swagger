@@ -3,8 +3,8 @@
 namespace KEERill\ServiceSwagger\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use KEERill\ServiceSwagger\ServiceSwaggerServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

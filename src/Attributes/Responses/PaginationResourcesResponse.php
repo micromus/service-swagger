@@ -11,8 +11,6 @@ use OpenApi\Attributes\Response;
 final class PaginationResourcesResponse extends Response
 {
     /**
-     * @param string $resourceClass
-     * @param string $description
      * @return void
      */
     public function __construct(string $resourceClass, string $description = 'Запрос успешно выполнен')
@@ -51,12 +49,12 @@ final class PaginationResourcesResponse extends Response
                             property: 'data',
                             properties: [
                                 new Property(property: 'from', description: 'Номер первого элемента страницы', type: 'integer', example: 1),
-                                new Property(property: 'to', description: 'Номер последнего элемента страницы', type: 'integer', example: 1)
+                                new Property(property: 'to', description: 'Номер последнего элемента страницы', type: 'integer', example: 1),
                             ]
-                        )
-                    ])
+                        ),
+                    ]),
                 ]),
-                new Property(property: $resourceClass::$wrap, type: 'array', items: new Items(ref: '#/components/schemas/' . class_basename($resourceClass)))
+                new Property(property: $resourceClass::$wrap, type: 'array', items: new Items(ref: '#/components/schemas/'.class_basename($resourceClass))),
             ])
         );
     }

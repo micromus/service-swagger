@@ -12,7 +12,7 @@ final class FormRequestBody extends RequestBody
 {
     public function __construct(string $requestClass, bool $required = true)
     {
-        $ref = '#/components/schemas/' . class_basename($requestClass);
+        $ref = '#/components/schemas/'.class_basename($requestClass);
 
         parent::__construct(
             required: $required,
@@ -21,7 +21,7 @@ final class FormRequestBody extends RequestBody
                 new MediaType(
                     mediaType: 'application/x-www-form-urlencoded',
                     schema: new Schema(ref: $ref)
-                )
+                ),
             ]
         );
     }
