@@ -56,7 +56,7 @@ final class PaginationResourcesResponse extends Response
                         )
                     ])
                 ]),
-                new Property(property: 'data', type: 'array', items: new Items(ref: '#/components/schemas/' . class_basename($resourceClass)))
+                new Property(property: $resourceClass::$wrap, type: 'array', items: new Items(ref: '#/components/schemas/' . class_basename($resourceClass)))
             ])
         );
     }

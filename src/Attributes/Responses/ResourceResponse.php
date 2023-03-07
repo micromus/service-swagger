@@ -20,7 +20,7 @@ final class ResourceResponse extends Response
             response: 200,
             description: $description,
             content: new JsonContent(properties: [
-                new Property(property: 'data', ref: '#/components/schemas/' . class_basename($resourceClass))
+                new Property(property: $resourceClass::$wrap, ref: '#/components/schemas/' . class_basename($resourceClass))
             ])
         );
     }
