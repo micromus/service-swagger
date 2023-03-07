@@ -1,5 +1,5 @@
 <?php
 
-use KEERill\ServiceSwagger\Tests\TestCase;
+use Micromus\ServiceSwagger\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

@@ -1,10 +1,10 @@
 <?php
 
-namespace KEERill\ServiceSwagger\Tests;
+namespace Micromus\ServiceSwagger\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use KEERill\ServiceSwagger\ServiceSwaggerServiceProvider;
+use Micromus\ServiceSwagger\ServiceSwaggerServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -17,7 +17,7 @@ class TestCase extends Orchestra
         );
     }
 
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             ServiceSwaggerServiceProvider::class,
